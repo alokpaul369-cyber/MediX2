@@ -1,0 +1,19 @@
+# MediX e-mail settings (for "Forgot password?" codes)
+#
+# 1. Copy this file to data/mail.properties (same folder) and fill it in.
+# 2. For Gmail: turn on 2-Step Verification, then create an App password at
+#    https://myaccount.google.com/apppasswords and paste it as smtp.password
+#    (your normal Gmail password does not work).
+# 3. Restart MediX. The "Demo mode" note on the Reset Password screen disappears.
+#
+# Without data/mail.properties, or with mail.enabled=false, MediX runs in DEMO MODE:
+# the 6-digit code is shown on screen instead of being e-mailed.
+# data/mail.properties is in .gitignore: never commit your password.
+
+mail.enabled=true
+smtp.host=smtp.gmail.com
+smtp.port=587
+smtp.starttls=true
+smtp.username=youraddress@gmail.com
+smtp.password=<Gmail app password>
+from.name=MediX

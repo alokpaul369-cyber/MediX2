@@ -1,0 +1,9 @@
+build/
+dist/
+nbproject/private/
+# runtime data (database, licenses, logs, map tiles) – but keep the mail settings example
+data/*
+!data/mail.properties.example
+# SMTP user name and app password: never commit
+data/mail.properties
+CLAUDE.md/
